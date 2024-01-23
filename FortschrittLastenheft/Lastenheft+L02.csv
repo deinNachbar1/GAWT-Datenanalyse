@@ -13,13 +13,13 @@ R0.1;MUSS;;"Es existiert ein Projektbericht als PDF-Datei mit folgenden Inhalten
 * Quellenverzeichnis für externe Referenzen";Bericht;0
 R0.2;MUSS;;"Alle .csv-Dateien liegen als UTF-8 Datei mit Trennzeichen "","" und Dezimaltrennzeichen ""."" vor.";Datei;0
 R0.3;SOLL;;Der gesamte Quellcode / die Rohdaten sowie alle Ergebnisse sind vorhanden.;Code;2
-R0.4;KANN;;Die Abgabe erfolgt über ein .git-Repository auf einer beliebigen Git-Webplattform.;-;2
+x R0.4;KANN;;Die Abgabe erfolgt über ein .git-Repository auf einer beliebigen Git-Webplattform.;-;2
 ;;;;;0
-R1.1;MUSS;1;"Es liegt eine textuelle Beschreibung des gegebenen Datensatzes vor, die folgende Fragen beantwortet:
+x R1.1;MUSS;1;"Es liegt eine textuelle Beschreibung des gegebenen Datensatzes vor, die folgende Fragen beantwortet:
 * Welches Wissen ist über Struktur und Inhalt des Datensatzes vor der weiteren Auswertung vorhanden? 
 * Woher stammen die Daten (Quellenangabe)?
 * In welchem Format liegen die Daten vor (Anzahl Dateien, Kodierung, ...)?";Bericht;0
-R1.2;MUSS;1;Für jede Variable ist die jeweils geeignete Skalenvariante angegeben.;Bericht;0
+x R1.2;MUSS;1;Für jede Variable ist die jeweils geeignete Skalenvariante angegeben.;Bericht;0
 R1.3;MUSS;1;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;0
 R1.4;MUSS;1;Zu jeder Variable ist eine Urliste im .csv-Format erstellt.;Datei;0
 R1.5;MUSS;1;Zu jeder Variable ist eine Rangliste im .csv-Format erstellt.;Datei;0
