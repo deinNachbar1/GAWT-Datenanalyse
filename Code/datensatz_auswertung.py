@@ -1,6 +1,8 @@
 import csv
 import math
 import os
+import matplotlib.pyplot as plt
+import numpy as np
 
 
 def main():
@@ -35,13 +37,13 @@ def main():
 
             print()
 
-            print_median(x, werteX)
-            print_median(y, werteY)
+            print_arithmetische_mittel(x, werteX, 3)
+            print_arithmetische_mittel(y, werteY, 3)
 
             print()
 
-            print_arithmetische_mittel(x, werteX, 3)
-            print_arithmetische_mittel(y, werteY, 3)
+            print_median(x, werteX)
+            print_median(y, werteY)
 
             print()
 
@@ -51,6 +53,10 @@ def main():
             print()
 
             print_kovarianz(werteX, werteY, 3)
+
+            plt.boxplot(werteY)
+
+            plt.savefig("boxplot.png")
 
     else:
         print("datei existiert nicht!\n")
