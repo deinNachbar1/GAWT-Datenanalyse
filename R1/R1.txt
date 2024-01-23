@@ -1,19 +1,9 @@
 R1.1: 
 Daten des Statistischen Bundesamts, veröffentlicht am 12. Semptember 2022
 2 Spalten; Jahr (2015 bis 2021) und zugehörige Exportquote in Prozent
-6 Datenpaare
+7 Datenpaare
 Die Daten liegen im csv-Format vor und befinden sich in einer Datei.
 
 R1.2:
 Skalierung Jahreszahlen: Intervallskalierung
 (Skalierung Exportquote: Verhältnisskalierung)
-
-R1.3:
-
-
-R1.4:
-
-
-R1.5:
-
-

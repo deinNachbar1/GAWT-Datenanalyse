@@ -1,0 +1,7 @@
+R3.1:
+Daten des Statistischen Bundesamts, veröffentlicht am 12. Semptember 2022
+2 Spalten; Jahr (2015 bis 2021) und zugehörige Exportquote in Prozent
+7 Datenpaare
+Es sind fehlerhafte/ unvollstaendige Daten vorhanden
+Die Daten liegen im csv-Format vor und befinden sich in zwei Dateien.
+Dabei liegen die Jahreszahlen in Datei a in codierter Form vor. Die Codierung kann Datei b entnommen werden.

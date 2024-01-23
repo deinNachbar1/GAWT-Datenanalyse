@@ -22,7 +22,7 @@ x R1.1;MUSS;1;"Es liegt eine textuelle Beschreibung des gegebenen Datensatzes vo
 x R1.2;MUSS;1;Für jede Variable ist die jeweils geeignete Skalenvariante angegeben.;Bericht;0
 R1.3;MUSS;1;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;0
 R1.4;MUSS;1;Zu jeder Variable ist eine Urliste im .csv-Format erstellt.;Datei;0
-R1.5;MUSS;1;Zu jeder Variable ist eine Rangliste im .csv-Format erstellt.;Datei;0
+x R1.5;MUSS;1;Zu jeder Variable ist eine Rangliste im .csv-Format erstellt.;Datei;0
 R1.6;KANN;1;Die gegebenen Daten liegen als konsolidierte Excel-Datei im .xlsx-Format vor.;Datei;1
 R1.7;MUSS;1;Für jede Variable sind Modus, arithmetischer Mittelwert und Median angegeben.;Bericht;0
 R1.8;MUSS;1;Für jede Variable ist die Spannweite angegeben.;Bericht;0
@@ -40,7 +40,7 @@ R1.19;KANN;1;Die Daten wurden für jede Variable in eigens definierte, sinnvolle
 R1.20;KANN;1;Eine Kontingenztabelle zu den klassifizierten Daten liegt vor.;Bericht;2
 R1.21;KANN;1;Der Rangkorrelationskoeffizient nach Spearman ist berechnet.;Bericht;2
 ;;;;;
-R2.1;SOLL;2;"Es liegt eine textuelle Beschreibung des gegebenen Datensatzes vor, die folgende Fragen beantwortet:
+x R2.1;SOLL;2;"Es liegt eine textuelle Beschreibung des gegebenen Datensatzes vor, die folgende Fragen beantwortet:
 * Welches Wissen ist über Struktur und Inhalt des Datensatzes vor der weiteren Auswertung vorhanden? 
 * Woher stammen die Daten (Quellenangabe)?
 * In welchem Format liegen die Daten vor (Anzahl Dateien, Kodierung, ...)?";Bericht;2
@@ -64,7 +64,7 @@ R2.18;KANN;2;Für jede Variable ist der Quartilsabstand R_Q0.5 angegeben.;Berich
 R2.19;KANN;2;Die Kovarianz ist angegeben.;Bericht;1
 R2.20;KANN;2;Der Korrelationskoeffizient ist angegeben.;Bericht;1
 ;;;;;
-R3.1;SOLL;3;"Es liegt eine textuelle Beschreibung des gegebenen Datensatzes vor, die folgende Fragen beantwortet:
+x R3.1;SOLL;3;"Es liegt eine textuelle Beschreibung des gegebenen Datensatzes vor, die folgende Fragen beantwortet:
 * Welches Wissen ist über Struktur und Inhalt des Datensatzes vor der weiteren Auswertung vorhanden? 
 * Woher stammen die Daten (Quellenangabe)?
 * In welchem Format liegen die Daten vor (Anzahl Dateien, Kodierung, ...)?";Bericht;2
