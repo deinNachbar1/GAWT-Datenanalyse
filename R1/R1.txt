@@ -7,3 +7,64 @@ Die Daten liegen im csv-Format vor und befinden sich in einer Datei.
 R1.2:
 Skalierung Jahreszahlen: Intervallskalierung
 (Skalierung Exportquote: Verhältnisskalierung)
+
+R1.3
+-
+
+R1.4
+Extra-Dokument
+
+R1.5
+Extra Dokument
+
+R1.6
+-
+
+R1.7:
+Modus: -
+Arithmetischer Mittelwert Jahr: 2018
+Arithmetischer Mittelwert Exportquote: 46,314
+Median Jahr: 2018
+Median Exportquote: 46,9
+
+R1.8:
+Spannweite Jahr: 6
+Spannweite Exportquote: 4,3
+
+R1.9:
+Mittlere Abweichung vom Median
+
+R1.10:
+Stichprobenvarianz
+
+R.11:
+Variationskoeffizient
+
+R1.12:
+Box-Whisker-Plot
+
+R1.13:
+Scatter-Plot der Daten mit Achsenbeschriftungen
+
+R1.14:
+Textuelle Beschreibung der Daten als Zusammenfassung
+
+R1.15:
+Sämtliche Quartile und Dezile
+
+R1.16:
+Quartilsabstand R_Q0.5
+
+R1.17:
+Kovarianz
+
+R1.18:
+Korrelationskoeffizient
+
+R1.19:
+19-21 Was mit Klasseneinteilung
+
+R1.20:
+
+
+R1.21:
