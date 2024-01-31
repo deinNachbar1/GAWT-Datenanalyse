@@ -37,13 +37,13 @@ def main():
 
             print()
 
-            print_arithmetische_mittel(x, werteX, 3)
-            print_arithmetische_mittel(y, werteY, 3)
+            arith_mittelwert_x = print_arithmetische_mittel(x, werteX, 3)
+            arith_mittelwert_y = print_arithmetische_mittel(y, werteY, 3)
 
             print()
 
-            print_median(x, werteX)
-            print_median(y, werteY)
+            median_x = print_median(x, werteX)
+            median_y = print_median(y, werteY)
 
             print()
 
@@ -51,6 +51,23 @@ def main():
             print_spannweite(y, werteY, 3)
 
             print()
+
+            print_mittlere_abweichung_median(x, werteX, 3, median_x)
+            print_mittlere_abweichung_median(y, werteY, 3, median_y)
+
+            print()
+
+            varianz_x = print_stichprobenvarianz(x, werteX, 3, arith_mittelwert_x)
+            varianz_y = print_stichprobenvarianz(y, werteY, 3, arith_mittelwert_y)
+
+            print()
+
+            print_variationskoeffizient(x, werteX, 3, arith_mittelwert_x, varianz_x)
+            print_variationskoeffizient(y, werteY, 3, arith_mittelwert_y, varianz_y)
+
+            # Variationskoeffizient
+            print()
+
 
             print_kovarianz(werteX, werteY, 3)
 
@@ -79,11 +96,12 @@ def print_median(name, werte):
     if (len(werte) % 2) == 1:
         median_index = math.floor(len(werte) / 2)
         print("Median " + name + ": " + str(werte[median_index]))
+        return werte[median_index]
     else:
-        median_unten_index = int(len(werte) / 2) - 1
-        print("unterer Median " + name + ": " + str(werte[median_unten_index]))
-        median_oben_index = int(len(werte) / 2)
-        print("oberer Median " + name + ": " + str(werte[median_oben_index]))
+        median_unten_index = int(len(werte) / 2)
+        median_oben_index = int(len(werte) / 2) + 1
+        print("Median " + name + ": " + str((1/2) * (werte[median_unten_index] + werte[median_oben_index])))
+        return (1/2) * (werte[median_unten_index] + werte[median_oben_index])
 
 
 def print_arithmetische_mittel(name, werte, nachkommastelle):
@@ -95,6 +113,7 @@ def print_arithmetische_mittel(name, werte, nachkommastelle):
     mittelwert = mittelwert / len(werte)
 
     print("arithmetische Mittelwert " + name + ": " + str(round(mittelwert, nachkommastelle)))
+    return round(mittelwert, nachkommastelle)
 
 
 def print_spannweite(name, werte, nachkommastelle):
@@ -103,6 +122,41 @@ def print_spannweite(name, werte, nachkommastelle):
     spannweite = round(float(werte[len(werte) - 1]) - float(werte[0]), nachkommastelle)
 
     print("Spannweite " + name + ": " + str(spannweite))
+
+
+def print_mittlere_abweichung_median(name, werte, nachkommastelle, median):
+    m_a_m = 0
+    for i in werte:
+        m_a_m = m_a_m + abs(median - werte[i])
+    m_a_m = m_a_m / len(werte)
+
+    print("Mittlere Abweichung von Median " + name + ": " + round(m_a_m, nachkommastelle))
+
+
+def print_stichprobenvarianz(name, werte, nachkommastelle, mittelwert):
+    varianz = 0
+    for i in werte:
+        varianz = varianz + (abs(mittelwert - werte[i]))**2
+    varianz = varianz / len(werte)
+
+    print("Stichprobenvarianz " + name + ": " + round(varianz, nachkommastelle))
+    return varianz
+
+
+def print_variationskoeffizient(name, werte, nachkommastellen, mittelwert, varianz):
+    print("Variationskoeffizient " + name + ": " + round((math.sqrt(varianz) / mittelwert), nachkommastellen))
+
+
+def print_quantile(name, werte)
+    werte = sorted(werte)
+    p = 0
+    n = len(werte)
+    print(name + ": \n")
+
+    # Dezile:
+    while p <= 1:
+        if (n * p) % 2 != 0:
+            print("Q" + p + ": " + werte[(int)(n*p) + 1] + "\n")
 
 
 def print_kovarianz(werte1, werte2, nachkommastelle):

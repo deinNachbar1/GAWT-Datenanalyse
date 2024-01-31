@@ -21,11 +21,11 @@ x R1.1;MUSS;1;"Es liegt eine textuelle Beschreibung des gegebenen Datensatzes vo
 * In welchem Format liegen die Daten vor (Anzahl Dateien, Kodierung, ...)?";Bericht;0
 x R1.2;MUSS;1;Für jede Variable ist die jeweils geeignete Skalenvariante angegeben.;Bericht;0
 R1.3;MUSS;1;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;0
-R1.4;MUSS;1;Zu jeder Variable ist eine Urliste im .csv-Format erstellt.;Datei;0
+x R1.4;MUSS;1;Zu jeder Variable ist eine Urliste im .csv-Format erstellt.;Datei;0
 x R1.5;MUSS;1;Zu jeder Variable ist eine Rangliste im .csv-Format erstellt.;Datei;0
 R1.6;KANN;1;Die gegebenen Daten liegen als konsolidierte Excel-Datei im .xlsx-Format vor.;Datei;1
-R1.7;MUSS;1;Für jede Variable sind Modus, arithmetischer Mittelwert und Median angegeben.;Bericht;0
-R1.8;MUSS;1;Für jede Variable ist die Spannweite angegeben.;Bericht;0
+x R1.7;MUSS;1;Für jede Variable sind Modus, arithmetischer Mittelwert und Median angegeben.;Bericht;0
+x R1.8;MUSS;1;Für jede Variable ist die Spannweite angegeben.;Bericht;0
 R1.9;MUSS;1;Für jede Variable ist die mittlere Abweichung vom Median angegeben.;Bericht;0
 R1.10;MUSS;1;Für jede Variable ist die Stichprobenvarianz angegeben.;Bericht;0
 R1.11;MUSS;1;Für jede Variable ist der Variationskoeffizient angegeben.;Bericht;0
