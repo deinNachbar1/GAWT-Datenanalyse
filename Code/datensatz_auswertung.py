@@ -65,9 +65,12 @@ def main():
             print_variationskoeffizient(x, werteX, 3, arith_mittelwert_x, varianz_x)
             print_variationskoeffizient(y, werteY, 3, arith_mittelwert_y, varianz_y)
 
-            # Variationskoeffizient
             print()
 
+            print_quantile(x, werteX)
+            print_quantile(y, werteY)
+
+            print()
 
             print_kovarianz(werteX, werteY, 3)
 
@@ -130,7 +133,7 @@ def print_mittlere_abweichung_median(name, werte, nachkommastelle, median):
         m_a_m = m_a_m + abs(median - werte[i])
     m_a_m = m_a_m / len(werte)
 
-    print("Mittlere Abweichung von Median " + name + ": " + round(m_a_m, nachkommastelle))
+    print("Mittlere Abweichung von Median " + name + ": " + round(m_a_m, nachkommastelle) + "\n")
 
 
 def print_stichprobenvarianz(name, werte, nachkommastelle, mittelwert):
@@ -139,25 +142,37 @@ def print_stichprobenvarianz(name, werte, nachkommastelle, mittelwert):
         varianz = varianz + (abs(mittelwert - werte[i]))**2
     varianz = varianz / len(werte)
 
-    print("Stichprobenvarianz " + name + ": " + round(varianz, nachkommastelle))
+    print("Stichprobenvarianz " + name + ": " + round(varianz, nachkommastelle) + "\n")
     return varianz
 
 
 def print_variationskoeffizient(name, werte, nachkommastellen, mittelwert, varianz):
-    print("Variationskoeffizient " + name + ": " + round((math.sqrt(varianz) / mittelwert), nachkommastellen))
+    print("Variationskoeffizient " + name + ": " + round((math.sqrt(varianz) / mittelwert), nachkommastellen) + "\n")
 
 
-def print_quantile(name, werte)
+def print_quantile(name, werte):
     werte = sorted(werte)
-    p = 0
+    p = 0.1
     n = len(werte)
     print(name + ": \n")
 
     # Dezile:
-    while p <= 1:
+    while p <= 0.9:
         if (n * p) % 2 != 0:
-            print("Q" + p + ": " + werte[(int)(n*p) + 1] + "\n")
+            print("Q" + p + ": " + werte[math.floor(n*p) + 1] + "\n")
+        else:
+            print("Q" + p + ": " + ((werte[n*p] + werte[n*p + 1])/2) + "\n")
+        p = p + 0.1
+    print("\n")
+    p = 0.25
 
+    # Quartile
+    while p <= 0.75:
+        if (n * p) % 2 != 0:
+            print("Q" + p + ": " + werte[math.floor(n*p) + 1] + "\n")
+        else:
+            print("Q" + p + ": " + ((werte[n*p] + werte[n*p + 1])/2) + "\n")
+        p = p + 0.25
 
 def print_kovarianz(werte1, werte2, nachkommastelle):
     mittelwert1 = 0
