@@ -6,7 +6,7 @@ Die Daten liegen im csv-Format vor und befinden sich in einer Datei.
 
 R1.2:
 Skalierung Jahreszahlen: Intervallskalierung
-(Skalierung Exportquote: Verhältnisskalierung)
+Skalierung Exportquote: Verhältnisskalierung
 
 R1.3
 -
@@ -33,24 +33,34 @@ Spannweite Exportquote: 4,3
 
 R1.9:
 Mittlere Abweichung vom Median
+Jahr: 1,714
+Exportquote: 0,814
 
 R1.10:
 Stichprobenvarianz
+Jahr: 4
+Exportquote: 1,964
 
 R.11:
 Variationskoeffizient
+Jahr: 0,001
+Exportquote: 0,03
 
 R1.12:
-Box-Whisker-Plot
+Extra-Dokument
 
 R1.13:
-Scatter-Plot der Daten mit Achsenbeschriftungen
+Extra-Dokument
 
 R1.14:
 Textuelle Beschreibung der Daten als Zusammenfassung
 
 R1.15:
-Sämtliche Quartile und Dezile
+Saemtliche Dezile und Quartile
+Jahre:
+
+Exportquote:
+
 
 R1.16:
 Quartilsabstand R_Q0.5
