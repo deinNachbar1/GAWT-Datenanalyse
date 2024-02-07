@@ -130,24 +130,24 @@ def print_spannweite(name, werte, nachkommastelle):
 def print_mittlere_abweichung_median(name, werte, nachkommastelle, median):
     m_a_m = 0
     for i in werte:
-        m_a_m = m_a_m + abs(median - werte[i])
+        m_a_m = m_a_m + abs(median - i)
     m_a_m = m_a_m / len(werte)
 
-    print("Mittlere Abweichung von Median " + name + ": " + round(m_a_m, nachkommastelle) + "\n")
+    print("Mittlere Abweichung von Median " + name + ": " + str(round(m_a_m, nachkommastelle)))
 
 
 def print_stichprobenvarianz(name, werte, nachkommastelle, mittelwert):
     varianz = 0
     for i in werte:
-        varianz = varianz + (abs(mittelwert - werte[i]))**2
+        varianz = varianz + (abs(mittelwert - i))**2
     varianz = varianz / len(werte)
 
-    print("Stichprobenvarianz " + name + ": " + round(varianz, nachkommastelle) + "\n")
+    print("Stichprobenvarianz " + name + ": " + str(round(varianz, nachkommastelle)))
     return varianz
 
 
 def print_variationskoeffizient(name, werte, nachkommastellen, mittelwert, varianz):
-    print("Variationskoeffizient " + name + ": " + round((math.sqrt(varianz) / mittelwert), nachkommastellen) + "\n")
+    print("Variationskoeffizient " + name + ": " + str(round((math.sqrt(varianz) / mittelwert), nachkommastellen)))
 
 
 def print_quantile(name, werte):
@@ -159,9 +159,9 @@ def print_quantile(name, werte):
     # Dezile:
     while p <= 0.9:
         if (n * p) % 2 != 0:
-            print("Q" + p + ": " + werte[math.floor(n*p) + 1] + "\n")
+            print("Q" + str(round(p, 1)) + ": " + str(werte[math.floor(n*p)]))
         else:
-            print("Q" + p + ": " + ((werte[n*p] + werte[n*p + 1])/2) + "\n")
+            print("Q" + str(round(p, 1)) + ": " + str((werte[n*p] + werte[n*p])/2))
         p = p + 0.1
     print("\n")
     p = 0.25
@@ -169,10 +169,11 @@ def print_quantile(name, werte):
     # Quartile
     while p <= 0.75:
         if (n * p) % 2 != 0:
-            print("Q" + p + ": " + werte[math.floor(n*p) + 1] + "\n")
+            print("Q" + str(round(p, 2)) + ": " + str(werte[math.floor(n*p)]))
         else:
-            print("Q" + p + ": " + ((werte[n*p] + werte[n*p + 1])/2) + "\n")
+            print("Q" + str(round(p, 2)) + ": " + str((werte[n*p] + werte[n*p])/2))
         p = p + 0.25
+    print("")
 
 def print_kovarianz(werte1, werte2, nachkommastelle):
     mittelwert1 = 0
