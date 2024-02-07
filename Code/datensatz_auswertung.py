@@ -74,7 +74,7 @@ def main():
 
             print_kovarianz(werteX, werteY, 3)
 
-            plt.boxplot(werteY)
+            plt.boxplot(sorted(werteY))
 
             plt.savefig("boxplot.png")
 
@@ -157,23 +157,25 @@ def print_quantile(name, werte):
     print(name + ": \n")
 
     # Dezile:
+    print("Dezile:")
     while p <= 0.9:
         if (n * p) % 2 != 0:
             print("Q" + str(round(p, 1)) + ": " + str(werte[math.floor(n*p)]))
         else:
-            print("Q" + str(round(p, 1)) + ": " + str((werte[n*p] + werte[n*p])/2))
+            print("Q" + str(round(p, 1)) + ": " + str((werte[n*p-1] + werte[n*p])/2))
         p = p + 0.1
     print("\n")
     p = 0.25
 
     # Quartile
+    print("Quartile:")
     while p <= 0.75:
         if (n * p) % 2 != 0:
             print("Q" + str(round(p, 2)) + ": " + str(werte[math.floor(n*p)]))
         else:
-            print("Q" + str(round(p, 2)) + ": " + str((werte[n*p] + werte[n*p])/2))
+            print("Q" + str(round(p, 2)) + ": " + str((werte[n*p-1] + werte[n*p])/2))
         p = p + 0.25
-    print("")
+    print()
 
 def print_kovarianz(werte1, werte2, nachkommastelle):
     mittelwert1 = 0
@@ -192,7 +194,7 @@ def print_kovarianz(werte1, werte2, nachkommastelle):
     for i in range(0, len(werte1)):
         kovarianz += (werte1[i] - mittelwert1) * (werte2[i] - mittelwert2)
 
-    kovarianz = kovarianz / len(werte2) - 1
+    kovarianz = kovarianz / len(werte2) -1
 
     print("Kovarianz: " + str(round(kovarianz, nachkommastelle)))
 
