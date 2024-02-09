@@ -1,6 +1,8 @@
 import csv
 import math
 import os
+from scipy import stats
+
 import matplotlib.pyplot as plt
 
 
@@ -76,6 +78,10 @@ def main():
             print()
 
             print_korrelationskoeffizient(kovarianz, varianz_x, varianz_y, 2)
+
+            print()
+
+            print_modus(werteY, 1)
 
             plt.figure(figsize=(7, 7))
             plt.boxplot(sorted(werteY))
@@ -219,6 +225,21 @@ def print_kovarianz(werte1, werte2, nachkommastelle):
 def print_korrelationskoeffizient(kovarianz, varianz_x, varianz_y, nachkommastellen):
     korrelationskoeffizient = kovarianz / (math.sqrt(varianz_x) * math.sqrt(varianz_y))
     print("Korrelationskoeffizient: " + str(round(korrelationskoeffizient, nachkommastellen)))
+
+
+def print_modus(wert, genauigkeit):
+    modusArray = [0]
+
+    for i in range(0, len(wert)):
+        modusArray.append(round(wert[i], genauigkeit))
+
+    modus = stats.mode(modusArray)
+
+    print("Modus mit Werten auf " + str(genauigkeit) + " Nachkommastellen")
+    print("Modus: " + str(modus[0]))
+    print("Haeufigkeit: " + str(modus[1]))
+
+    return modus
 
 
 if __name__ == "__main__":
