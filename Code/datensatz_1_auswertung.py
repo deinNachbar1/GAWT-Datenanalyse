@@ -200,8 +200,7 @@ def print_quantile(name, werte):
                 quartil_75 = ((werte[n * p - 1] + werte[n * p]) / 2)
         p = p + 0.25
     print()
-    print("Quartilsabstand: " + str(quartil_75 - quartil_25))
-    print()
+    print("Quartilsabstand: " + str(round((quartil_75 - quartil_25), 2)))
 
 
 def print_kovarianz(werte1, werte2, nachkommastelle):
