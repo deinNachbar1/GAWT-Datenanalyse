@@ -33,7 +33,6 @@ def main():
                     werteX.append(float(row[0].replace(",", ".")))
                     werteY.append(float(row[1].replace(",", ".")))
 
-            print_rangliste(x, werteX)
             print_rangliste(y, werteY)
 
             print()
@@ -43,17 +42,14 @@ def main():
 
             print()
 
-            median_x = print_median(x, werteX)
             median_y = print_median(y, werteY)
 
             print()
 
-            print_spannweite(x, werteX, 2)
             print_spannweite(y, werteY, 2)
 
             print()
 
-            print_mittlere_abweichung_median(x, werteX, 2, median_x)
             print_mittlere_abweichung_median(y, werteY, 2, median_y)
 
             print()
@@ -63,12 +59,10 @@ def main():
 
             print()
 
-            print_variationskoeffizient(x, werteX, 2, arith_mittelwert_x, varianz_x)
             print_variationskoeffizient(y, werteY, 2, arith_mittelwert_y, varianz_y)
 
             print()
 
-            print_quantile(x, werteX)
             print_quantile(y, werteY)
 
             print()
@@ -87,11 +81,6 @@ def main():
             plt.boxplot(sorted(werteY))
             plt.ylabel(y)
             plt.savefig("boxplot_" + str(y) + ".png")
-
-            plt.figure(figsize=(7, 7))
-            plt.boxplot(sorted(werteX))
-            plt.ylabel(x)
-            plt.savefig("boxplot_" + str(x) + ".png")
 
             plt.figure(figsize=(5, 5))
             plt.scatter(werteX, werteY)

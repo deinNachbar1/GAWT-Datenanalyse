@@ -4,3 +4,120 @@ Daten des Statistischen Bundesamts, veröffentlicht am 12. Semptember 2022
 7 Datenpaare
 Fehlerhafte/ unvollstaendige Daten vorhanden
 Die Daten liegen im csv-Format vor und befinden sich in einer Datei.
+
+R2.3:
+
+
+
+
+R2.4:
+
+Software und genutzte Funktionen:
+Programmierung per PyCharm mit Python.
+Bibliotheken:
+    csv; Einlesen der csv-Dateien
+    math; Verschiedene mathematische Operatoren
+    os; Überprüfung ob angegebene Datei existiert
+    matplotlib; Erstellen von Boxplot, Scatterplot...
+
+R2.8:
+
+arithmetische Mittelwert Jahr: 2018.0
+arithmetische Mittelwert Exportquote: 47.0
+
+Median Jahr: 2018.0
+Median Exportquote: 47.0
+
+R2.9:
+
+Spannweite Jahr: 6.0
+Spannweite Exportquote: 0.6
+
+R2.10:
+
+Mittlere Abweichung von Median Jahr: 1.71
+Mittlere Abweichung von Median Exportquote: 0.16
+
+R2.11:
+
+Stichprobenvarianz Jahr: 4.0
+Stichprobenvarianz Exportquote: 0.04
+
+R2.12:
+
+Variationskoeffizient Jahr: 0.0
+Variationskoeffizient Exportquote: 0.0
+
+R2.13:
+
+siehe boxplot_Exportquote.png und boxplot_Jahr.png
+
+R2.14:
+
+siehe scatterplot.png
+
+R2.15:
+
+R2.16:
+
+Bei den Daten des Statistischen Bundesamtes handelt es sich um Exportquoten zwischen den Jahren 
+2015 und 2021, welche am 12. September 2022 vom statistischen Bundesamt veröffentlicht wurden.
+
+R2.17:
+
+Jahr:
+
+Quartile:
+Q0.25: 2016.0
+Q0.5: 2018.0
+Q0.75: 2020.0
+
+Dezile:
+Q0.1: 2015.0
+Q0.2: 2016.0
+Q0.3: 2017.0
+Q0.4: 2017.0
+Q0.5: 2018.0
+Q0.6: 2019.0
+Q0.7: 2019.0
+Q0.8: 2020.0
+Q0.9: 2021.0
+
+Exportquote:
+
+Quartile:
+Q0.25: 46.85
+Q0.5: 47.0
+Q0.75: 47.2
+
+Dezile:
+Q0.1: 46.7
+Q0.2: 46.85
+Q0.3: 46.9
+Q0.4: 46.9
+Q0.5: 47.0
+Q0.6: 47.05
+Q0.7: 47.05
+Q0.8: 47.2
+Q0.9: 47.3
+
+R2.18:
+
+Jahr:
+
+Quartilsabstand: 4.0
+
+Exportquote:
+
+Quartilsabstand: 0.35
+
+R2.19:
+
+Kovarianz: -0.1
+
+R.2.20:
+
+Korrelationskoeffizient: -0.26
+
+
+
