@@ -1,0 +1,5 @@
+R4.8
+Bei den Daten handelt es sich um 1D Zentripetalbeschleunigungs-Daten des iPhone-Beschleunigungssensors,
+aufgezeichnet, bzw. generiert mit Phybox.
+
+
