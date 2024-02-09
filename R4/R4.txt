@@ -2,4 +2,35 @@ R4.8
 Bei den Daten handelt es sich um 1D Zentripetalbeschleunigungs-Daten des iPhone-Beschleunigungssensors,
 aufgezeichnet, bzw. generiert mit Phybox.
 
+arithmetische Mittelwert Acceleration: 23.42
+
+Median Acceleration: 15.83236718
+
+Spannweite Acceleration: 121.81
+
+Mittlere Abweichung von Median Acceleration: 18.37
+
+Stichprobenvarianz Acceleration: 691.18
+
+Variationskoeffizient Acceleration: 1.12
+
+Dezile:
+Q0.1: 0.4485697814
+Q0.2: 1.271282965
+Q0.3: 5.223840173
+Q0.4: 11.57538995
+Q0.5: 15.83236718
+Q0.6: 20.87885561
+Q0.7: 28.96650571
+Q0.8: 37.34846945
+Q0.9: 58.53093928
+
+Quartile:
+Q0.25: 2.141929221
+Q0.5: 15.83236718
+Q0.75: 32.50655062
+
+Kovarianz: 99.42
+
+Korrelationskoeffizient: 0.05
 
