@@ -1,4 +1,4 @@
-dateiname: R4Datensatz1D.csv
+dateiname: data-4-bereinigt.csv
 
 Nummer | Acceleration
 ------------------
@@ -914,5 +914,9 @@ Q0.75: 32.50655062
 
 
 Kovarianz: 99.42
+
+Modus mit Werten auf 1 Nachkommastellen
+Modus: [0.3]
+Haeufigkeit: [13]
 
 Korrelationskoeffizient: 0.05
