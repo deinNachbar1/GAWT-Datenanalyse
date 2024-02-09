@@ -75,16 +75,20 @@ def main():
 
             print()
 
-            print_korrelationskoeffizient(kovarianz, varianz_x, varianz_y, 2):
+            print_korrelationskoeffizient(kovarianz, varianz_x, varianz_y, 2)
 
-            plt.figure(figsize=(5, 5))
+            plt.figure(figsize=(7, 7))
             plt.boxplot(sorted(werteY))
+            plt.ylabel(y)
+            plt.savefig("boxplot_" + str(y) + ".png")
 
-            plt.savefig("boxplot.png")
+            plt.figure(figsize=(7, 7))
+            plt.boxplot(sorted(werteX))
+            plt.ylabel(x)
+            plt.savefig("boxplot_" + str(x) + ".png")
 
             plt.figure(figsize=(5, 5))
             plt.scatter(werteX, werteY)
-
             plt.savefig("scatterplot.png")
 
     else:
