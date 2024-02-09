@@ -1,36 +1,37 @@
-R4.8
+R4.3:
+Dimensionsanpassung der ursprünglich 3-D-Daten mittels LibreOffice Calc
+Die Daten wurden nicht weiter angepasst. Zwar verzerren die geringen Messwerte bei Phasen in Ruhe die Datenauswertung,
+andererseits ist es schwierig, eine Messwertgrenze für "In Ruhe" zu definieren.
+
+R4.4:
+Software und genutzte Funktionen:
+Programmierung per PyCharm mit Python.
+Bibliotheken:
+    csv; Einlesen der csv-Dateien
+    math; Verschiedene mathematische Operatoren
+    os; Überprüfung ob angegebene Datei existiert
+    matplotlib; Erstellen von Boxplot
+    scipy; Berechnung des Modus
+
+R4.5:
+Modus (mit 1 Nachkommastelle): 0.3 (n = 13)
+Arithmetischer Mittelwert: 23.42
+Median: 15.83
+
+R4.6:
+Stichprobenvarianz: 691.18
+
+R4.7:
+boxplot_Acceleration.png
+(scatterplot_data_4.png)
+
+R4.8:
 Bei den Daten handelt es sich um 1D Zentripetalbeschleunigungs-Daten des iPhone-Beschleunigungssensors,
-aufgezeichnet, bzw. generiert mit Phybox.
-
-arithmetische Mittelwert Acceleration: 23.42
-
-Median Acceleration: 15.83236718
-
-Spannweite Acceleration: 121.81
-
-Mittlere Abweichung von Median Acceleration: 18.37
-
-Stichprobenvarianz Acceleration: 691.18
-
-Variationskoeffizient Acceleration: 1.12
-
-Dezile:
-Q0.1: 0.4485697814
-Q0.2: 1.271282965
-Q0.3: 5.223840173
-Q0.4: 11.57538995
-Q0.5: 15.83236718
-Q0.6: 20.87885561
-Q0.7: 28.96650571
-Q0.8: 37.34846945
-Q0.9: 58.53093928
-
-Quartile:
-Q0.25: 2.141929221
-Q0.5: 15.83236718
-Q0.75: 32.50655062
-
-Kovarianz: 99.42
-
-Korrelationskoeffizient: 0.05
-
+aufgezeichnet bzw. generiert mit Phybox.
+Es wurden 283 Daten aufgezeichnet.
+Die Daten sind in m/s² angegeben.
+Die Beschleunigungsdaten wurden durch die Drehung eines Arms aufgenommen.
+Demenstprechend lässt sich die hohe Stichprobenvarianz erklären (der Arm war zwischendurch in Ruhe, und die Winkelgeschwindigkeit bei der Drehung überhaupt nicht konstant)
+Der Mittelwert ist wenig aussagekräftig, da die Zeiten des Handys in Ruhe mit einbezogen werden.
+Hier ist die Spannweite der Daten von 121.81 m/s² interessanter, da dies aufgrund des Nullpunkts in Ruhe die maximale momentane Beschleunigung darstellt.
+121.81 m/s² entspricht etwa 12,4g

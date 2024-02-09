@@ -20,7 +20,7 @@ x R1.1;MUSS;1;"Es liegt eine textuelle Beschreibung des gegebenen Datensatzes vo
 * Woher stammen die Daten (Quellenangabe)?
 * In welchem Format liegen die Daten vor (Anzahl Dateien, Kodierung, ...)?";Bericht;0
 x R1.2;MUSS;1;Für jede Variable ist die jeweils geeignete Skalenvariante angegeben.;Bericht;0
-R1.3;MUSS;1;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;0
+(noch: Codedokumentation) R1.3;MUSS;1;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;0
 x R1.4;MUSS;1;Zu jeder Variable ist eine Urliste im .csv-Format erstellt.;Datei;0
 x R1.5;MUSS;1;Zu jeder Variable ist eine Rangliste im .csv-Format erstellt.;Datei;0
 x R1.6;KANN;1;Die gegebenen Daten liegen als konsolidierte Excel-Datei im .xlsx-Format vor.;Datei;1
@@ -31,7 +31,7 @@ x R1.10;MUSS;1;Für jede Variable ist die Stichprobenvarianz angegeben.;Bericht;
 x R1.11;MUSS;1;Für jede Variable ist der Variationskoeffizient angegeben.;Bericht;0
 x R1.12;MUSS;1;Für jede Variable ist ein Box-Whisker-Plot erstellt.;Bericht;0
 x R1.13;MUSS;1;Ein Scatterplot der Daten liegt vor, Achsenbeschriftungen sind vorhanden.;Bericht;0
-R1.14;MUSS;1;Eine textuelle Beschreibung der Daten als Zusammenfassung liegt vor.;Bericht;0
+x R1.14;MUSS;1;Eine textuelle Beschreibung der Daten als Zusammenfassung liegt vor.;Bericht;0
 x R1.15;SOLL;1;Für jede Variable sind sämtliche Quartile und Dezile angegeben.;Bericht;4
 x R1.16;SOLL;1;Für jede Variable ist der Quartilsabstand R_Q0.5 angegeben.;Bericht;2
 x R1.17;SOLL;1;Die Kovarianz ist angegeben.;Bericht;2
@@ -45,7 +45,7 @@ x R2.1;SOLL;2;"Es liegt eine textuelle Beschreibung des gegebenen Datensatzes vo
 * Woher stammen die Daten (Quellenangabe)?
 * In welchem Format liegen die Daten vor (Anzahl Dateien, Kodierung, ...)?";Bericht;2
 R2.2;SOLL;2;Die eingelesenen Daten liegen in bereinigter Form vor.;Datei;2
-R2.3;SOLL;2;Ergriffene Maßnahmen zur Datenbereinigung sind dokumentiert.;Bericht / Code / Datei;2
+x R2.3;SOLL;2;Ergriffene Maßnahmen zur Datenbereinigung sind dokumentiert.;Bericht / Code / Datei;2
 R2.4;SOLL;2;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;2
 R2.5;SOLL;2;Die bereinigten Daten liegen als konsolidierte Excel-Datei im .xlsx-Format vor.;Datei;1
 R2.6;SOLL;2;Zu jeder Variable ist eine Urliste im .csv-Format erstellt.;Datei;1
@@ -91,11 +91,11 @@ R3.21;KANN;3;Für jede Variable ist der Quartilsabstand R_Q0.5 angegeben.;Berich
 R3.22;KANN;3;Die Kovarianz ist angegeben.;Bericht;1
 R3.23;KANN;3;Der Korrelationskoeffizient ist angegeben.;Bericht;1
 ;;;;;
-xR4.1;KANN;4;Es liegen (z.B. mit Phybox) selbst generierte 1D-Daten mit mind. 100 Datenpunkten im .csv-Format vor.;Datei;2
-xR4.2;KANN;4;Die eingelesenen Daten liegen in bereinigter Form vor.;Datei;1
-R4.3;KANN;4;Ergriffene Maßnahmen zur Datenbereinigung sind dokumentiert.;Bericht / Code / Datei;1
-R4.4;KANN;4;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;1
-R4.5;KANN;4;Es sind Modus, arithmetischer Mittelwert und Median angegeben.;Bericht;1
-R4.6;KANN;4;Die Stichprobenvarianz ist angegeben.;Bericht;1
-R4.7;KANN;4;Ein Box-Whisker-Plot liegt vor.;Bericht;1
-R4.8;KANN;4;Eine textuelle Beschreibung der Daten als Zusammenfassung liegt vor.;Bericht;2
+(R4Datensatz muss von 2D auf 1D gebracht werden) R4.1;KANN;4;Es liegen (z.B. mit Phybox) selbst generierte 1D-Daten mit mind. 100 Datenpunkten im .csv-Format vor.;Datei;2
+x R4.2;KANN;4;Die eingelesenen Daten liegen in bereinigter Form vor.;Datei;1
+x R4.3;KANN;4;Ergriffene Maßnahmen zur Datenbereinigung sind dokumentiert.;Bericht / Code / Datei;1
+(Code Kommentare fehlen)R4.4;KANN;4;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;1
+(Modus fehlt)R4.5;KANN;4;Es sind Modus, arithmetischer Mittelwert und Median angegeben.;Bericht;1
+x R4.6;KANN;4;Die Stichprobenvarianz ist angegeben.;Bericht;1
+x R4.7;KANN;4;Ein Box-Whisker-Plot liegt vor.;Bericht;1
+x R4.8;KANN;4;Eine textuelle Beschreibung der Daten als Zusammenfassung liegt vor.;Bericht;2
