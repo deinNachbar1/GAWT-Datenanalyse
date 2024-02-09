@@ -9,16 +9,23 @@ Skalierung Jahreszahlen: Intervallskalierung
 Skalierung Exportquote: Verhältnisskalierung
 
 R1.3
--
+Software und genutzte Funktionen:
+Programmierung per PyCharm mit Python.
+Bibliotheken:
+    csv; Einlesen der csv-Dateien
+    math; Verschiedene mathematische Operatoren
+    os; Überprüfung ob angegebene Datei existiert
+    matplotlib; Erstellen von Boxplot, Scatterplot...
 
 R1.4
-Extra-Dokument
+data-1-urliste.csv
 
 R1.5
-Extra Dokument
+rangliste_Jahr.csv
+rangliste_Exportquote.csv
 
 R1.6
--
+data-1.xlsx
 
 R1.7:
 Modus: -
@@ -47,15 +54,21 @@ Jahr: 0,001
 Exportquote: 0,03
 
 R1.12:
-Extra-Dokument
+Whiskey-Plot
 
 R1.13:
-Extra-Dokument
+Scatter-Plot
 
 R1.14:
-Textuelle Beschreibung der Daten als Zusammenfassung
+Textuelle Zusammenfassung:
+Da die Daten nur 7 Datenpunkte umfassen, lässt sich zu den Daten wenig sinnvolles bzw. aussagekräftiges zusammenfassen.
+Der Ausreißer-Wert 43.0 verzerrt allgemein die Datenauswertung. 
+Insb., weil so wenig Datenpunkte vorhanden sind, hat dieser eine Ausreißer eine relativ große Auswirkung.
+Bis auf 43.0 ist die Exportquote relativ eng um den Mittelwert/ Median verteilt, bzw. relativ glatt verteilt.
+Die Spannweite ohne diesen ist 1.2, mit diesem 4,3.
+Auch die negative Korrelation lässt sich vor allem durch den Ausreißerwert 43.0 erklären.
 
-R1.15:
+R1.15:s
 Saemtliche Dezile und Quartile
 Jahr:
 
@@ -97,18 +110,20 @@ Q0.75: 47.2
 
 
 R1.16:
-Quartilsabstand R_Q0.5
+Quartilsabstand Jahre: 4
+Quartilsabstand Exportquote: 1.1
 
 R1.17:
-Kovarianz
+Kovarianz: -1.07
 
 R1.18:
-Korrelationskoeffizient
+Korrelationskoeffizient: -0.38
 
 R1.19:
-19-21 Was mit Klasseneinteilung
+-
 
 R1.20:
-
+-
 
 R1.21:
+-
