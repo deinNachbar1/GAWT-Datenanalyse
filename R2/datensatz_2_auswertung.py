@@ -104,6 +104,8 @@ def main():
 
             plt.figure(figsize=(5, 5))
             plt.scatter(werteX, werteY)
+            plt.xlabel(x)
+            plt.ylabel(y)
             plt.savefig("scatterplot.png")
 
     else:
