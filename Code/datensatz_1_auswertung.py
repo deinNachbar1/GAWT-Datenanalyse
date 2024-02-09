@@ -36,8 +36,8 @@ def main():
 
             print()
 
-            arith_mittelwert_x = print_arithmetische_mittel(x, werteX, 3)
-            arith_mittelwert_y = print_arithmetische_mittel(y, werteY, 3)
+            arith_mittelwert_x = print_arithmetische_mittel(x, werteX, 2)
+            arith_mittelwert_y = print_arithmetische_mittel(y, werteY, 2)
 
             print()
 
@@ -46,23 +46,23 @@ def main():
 
             print()
 
-            print_spannweite(x, werteX, 3)
-            print_spannweite(y, werteY, 3)
+            print_spannweite(x, werteX, 2)
+            print_spannweite(y, werteY, 2)
 
             print()
 
-            print_mittlere_abweichung_median(x, werteX, 3, median_x)
-            print_mittlere_abweichung_median(y, werteY, 3, median_y)
+            print_mittlere_abweichung_median(x, werteX, 2, median_x)
+            print_mittlere_abweichung_median(y, werteY, 2, median_y)
 
             print()
 
-            varianz_x = print_stichprobenvarianz(x, werteX, 3, arith_mittelwert_x)
-            varianz_y = print_stichprobenvarianz(y, werteY, 3, arith_mittelwert_y)
+            varianz_x = print_stichprobenvarianz(x, werteX, 2, arith_mittelwert_x)
+            varianz_y = print_stichprobenvarianz(y, werteY, 2, arith_mittelwert_y)
 
             print()
 
-            print_variationskoeffizient(x, werteX, 3, arith_mittelwert_x, varianz_x)
-            print_variationskoeffizient(y, werteY, 3, arith_mittelwert_y, varianz_y)
+            print_variationskoeffizient(x, werteX, 2, arith_mittelwert_x, varianz_x)
+            print_variationskoeffizient(y, werteY, 2, arith_mittelwert_y, varianz_y)
 
             print()
 
@@ -71,7 +71,11 @@ def main():
 
             print()
 
-            print_kovarianz(werteX, werteY, 3)
+            kovarianz = print_kovarianz(werteX, werteY, 2)
+
+            print()
+
+            print_korrelationskoeffizient(kovarianz, varianz_x, varianz_y, 2):
 
             plt.figure(figsize=(5, 5))
             plt.boxplot(sorted(werteY))
@@ -203,6 +207,11 @@ def print_kovarianz(werte1, werte2, nachkommastelle):
     kovarianz = kovarianz / (len(werte2) - 1)
 
     print("Kovarianz: " + str(round(kovarianz, nachkommastelle)))
+    return round(kovarianz, nachkommastelle)
+
+def print_korrelationskoeffizient(kovarianz, varianz_x, varianz_y, nachkommastellen):
+    korrelationskoeffizient = kovarianz / (varianz_x * varianz_y)
+    print("Korrelationskoeffizient: " + str(round(korrelationskoeffizient, nachkommastellen)))
 
 
 if __name__ == "__main__":
