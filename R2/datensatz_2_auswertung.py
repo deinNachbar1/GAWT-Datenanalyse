@@ -19,6 +19,7 @@ def main():
 
             werteX = []
             werteY = []
+
             for row in reader:
 
                 if reader.line_num == 1:
@@ -27,9 +28,23 @@ def main():
                     x = row[0]
                     y = row[1]
                 else:
+                    row[0] = row[0].replace(",", ".")
+                    row[1] = row[1].replace(",", ".")
+
                     print(row[0] + " | " + row[1])
-                    werteX.append(float(row[0].replace(",", ".")))
-                    werteY.append(float(row[1].replace(",", ".")))
+
+                    if is_float(row[0]):
+                        werteX.append(float(row[0]))
+                    else:
+                        werteX.append(float("nan"))
+
+                    if is_float(row[1]):
+                        werteY.append(float(row[1]))
+                    else:
+                        werteY.append(float("nan"))
+
+            werteY = cleanData(werteY)
+            werteX = cleanData(werteX)
 
             print_rangliste(x, werteX)
             print_rangliste(y, werteY)
@@ -189,14 +204,14 @@ def print_quantile(name, werte):
             print("Q" + str(round(p, 2)) + ": " + str(werte[math.floor(n * p)]))
             if (p == 0.25):
                 quartil_25 = werte[math.floor(n * p)]
-            elif(p == 0.75):
+            elif (p == 0.75):
                 quartil_75 = werte[math.floor(n * p)]
 
         else:
             print("Q" + str(round(p, 2)) + ": " + str((werte[n * p - 1] + werte[n * p]) / 2))
             if (p == 0.25):
                 quartil_25 = ((werte[n * p - 1] + werte[n * p]) / 2)
-            elif(p == 0.75):
+            elif (p == 0.75):
                 quartil_75 = ((werte[n * p - 1] + werte[n * p]) / 2)
         p = p + 0.25
     print()
@@ -229,6 +244,28 @@ def print_kovarianz(werte1, werte2, nachkommastelle):
 def print_korrelationskoeffizient(kovarianz, varianz_x, varianz_y, nachkommastellen):
     korrelationskoeffizient = kovarianz / (math.sqrt(varianz_x) * math.sqrt(varianz_y))
     print("Korrelationskoeffizient: " + str(round(korrelationskoeffizient, nachkommastellen)))
+
+
+def cleanData(data):
+    for i in range(len(data)):
+        if math.isnan(data[i]):
+            if i == 0:
+                data[i] = data[i + 1]
+            elif i == len(data) - 1:
+                data[i] = data[i - 1]
+            else:
+                data[i] = (data[i - 1] + data[i + 1]) / 2
+    return data
+
+
+def is_float(string):
+    try:
+        float(string)
+        if math.isnan(float(string)):
+            return False
+        return True
+    except ValueError:
+        return False
 
 
 if __name__ == "__main__":
