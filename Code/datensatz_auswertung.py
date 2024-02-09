@@ -2,7 +2,6 @@ import csv
 import math
 import os
 import matplotlib.pyplot as plt
-import numpy as np
 
 
 def main():
@@ -74,9 +73,15 @@ def main():
 
             print_kovarianz(werteX, werteY, 3)
 
+            plt.figure(figsize=(5, 5))
             plt.boxplot(sorted(werteY))
 
             plt.savefig("boxplot.png")
+
+            plt.figure(figsize=(5, 5))
+            plt.scatter(werteX, werteY)
+
+            plt.savefig("scatterplot.png")
 
     else:
         print("datei existiert nicht!\n")
@@ -103,8 +108,8 @@ def print_median(name, werte):
     else:
         median_unten_index = int(len(werte) / 2)
         median_oben_index = int(len(werte) / 2) + 1
-        print("Median " + name + ": " + str((1/2) * (werte[median_unten_index] + werte[median_oben_index])))
-        return (1/2) * (werte[median_unten_index] + werte[median_oben_index])
+        print("Median " + name + ": " + str((1 / 2) * (werte[median_unten_index] + werte[median_oben_index])))
+        return (1 / 2) * (werte[median_unten_index] + werte[median_oben_index])
 
 
 def print_arithmetische_mittel(name, werte, nachkommastelle):
@@ -139,7 +144,7 @@ def print_mittlere_abweichung_median(name, werte, nachkommastelle, median):
 def print_stichprobenvarianz(name, werte, nachkommastelle, mittelwert):
     varianz = 0
     for i in werte:
-        varianz = varianz + (abs(mittelwert - i))**2
+        varianz = varianz + (abs(mittelwert - i)) ** 2
     varianz = varianz / len(werte)
 
     print("Stichprobenvarianz " + name + ": " + str(round(varianz, nachkommastelle)))
@@ -160,9 +165,9 @@ def print_quantile(name, werte):
     print("Dezile:")
     while p <= 0.9:
         if (n * p) % 2 != 0:
-            print("Q" + str(round(p, 1)) + ": " + str(werte[math.floor(n*p)]))
+            print("Q" + str(round(p, 1)) + ": " + str(werte[math.floor(n * p)]))
         else:
-            print("Q" + str(round(p, 1)) + ": " + str((werte[n*p-1] + werte[n*p])/2))
+            print("Q" + str(round(p, 1)) + ": " + str((werte[n * p - 1] + werte[n * p]) / 2))
         p = p + 0.1
     print("\n")
     p = 0.25
@@ -171,11 +176,12 @@ def print_quantile(name, werte):
     print("Quartile:")
     while p <= 0.75:
         if (n * p) % 2 != 0:
-            print("Q" + str(round(p, 2)) + ": " + str(werte[math.floor(n*p)]))
+            print("Q" + str(round(p, 2)) + ": " + str(werte[math.floor(n * p)]))
         else:
-            print("Q" + str(round(p, 2)) + ": " + str((werte[n*p-1] + werte[n*p])/2))
+            print("Q" + str(round(p, 2)) + ": " + str((werte[n * p - 1] + werte[n * p]) / 2))
         p = p + 0.25
     print()
+
 
 def print_kovarianz(werte1, werte2, nachkommastelle):
     mittelwert1 = 0
@@ -194,7 +200,7 @@ def print_kovarianz(werte1, werte2, nachkommastelle):
     for i in range(0, len(werte1)):
         kovarianz += (werte1[i] - mittelwert1) * (werte2[i] - mittelwert2)
 
-    kovarianz = kovarianz / len(werte2) -1
+    kovarianz = kovarianz / (len(werte2) - 1)
 
     print("Kovarianz: " + str(round(kovarianz, nachkommastelle)))
 
