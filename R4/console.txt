@@ -1,4 +1,4 @@
-dateiname: R4Datensatz1D.csv
+dateiname: data-4-bereinigt.csv
 
 Nummer | Acceleration
 ------------------
