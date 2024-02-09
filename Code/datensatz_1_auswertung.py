@@ -189,14 +189,14 @@ def print_quantile(name, werte):
             print("Q" + str(round(p, 2)) + ": " + str(werte[math.floor(n * p)]))
             if (p == 0.25):
                 quartil_25 = werte[math.floor(n * p)]
-            elif(p == 0.75):
+            elif (p == 0.75):
                 quartil_75 = werte[math.floor(n * p)]
 
         else:
             print("Q" + str(round(p, 2)) + ": " + str((werte[n * p - 1] + werte[n * p]) / 2))
             if (p == 0.25):
                 quartil_25 = ((werte[n * p - 1] + werte[n * p]) / 2)
-            elif(p == 0.75):
+            elif (p == 0.75):
                 quartil_75 = ((werte[n * p - 1] + werte[n * p]) / 2)
         p = p + 0.25
     print()
