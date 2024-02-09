@@ -182,25 +182,13 @@ def print_quantile(name, werte):
 
     # Quartile
     print("Quartile:")
-    quartil_25 = 0
-    quartil_75 = 0
     while p <= 0.75:
         if (n * p) % 2 != 0:
             print("Q" + str(round(p, 2)) + ": " + str(werte[math.floor(n * p)]))
-            if (p == 0.25):
-                quartil_25 = werte[math.floor(n * p)]
-            elif(p == 0.75):
-                quartil_75 = werte[math.floor(n * p)]
-
         else:
             print("Q" + str(round(p, 2)) + ": " + str((werte[n * p - 1] + werte[n * p]) / 2))
-            if (p == 0.25):
-                quartil_25 = ((werte[n * p - 1] + werte[n * p]) / 2)
-            elif(p == 0.75):
-                quartil_75 = ((werte[n * p - 1] + werte[n * p]) / 2)
         p = p + 0.25
     print()
-    print("Quartilsabstand: " + str(round((quartil_75 - quartil_25), 2)))
 
 
 def print_kovarianz(werte1, werte2, nachkommastelle):
