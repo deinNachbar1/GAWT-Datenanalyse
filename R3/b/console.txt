@@ -1,0 +1,92 @@
+dateiname: data-3-b-bereinigt.csv
+
+Key | Jahr
+------------------
+1 | 2021
+2 | 2020
+3 | 2019
+4 | 2018
+5 | 2017
+6 | 2016
+7 | 2015
+
+Rangliste Key:
+1.0
+2.0
+3.0
+4.0
+5.0
+6.0
+7.0
+
+Rangliste Jahr:
+2015.0
+2016.0
+2017.0
+2018.0
+2019.0
+2020.0
+2021.0
+
+arithmetische Mittelwert Key: 4.0
+arithmetische Mittelwert Jahr: 2018.0
+
+Median Key: 4.0
+Median Jahr: 2018.0
+
+Spannweite Key: 6.0
+Spannweite Jahr: 6.0
+
+Mittlere Abweichung von Median Key: 1.71
+Mittlere Abweichung von Median Jahr: 1.71
+
+Stichprobenvarianz Key: 4.0
+Stichprobenvarianz Jahr: 4.0
+
+Variationskoeffizient Key: 0.5
+Variationskoeffizient Jahr: 0.0
+
+Key:
+
+Dezile:
+Q0.1: 1.0
+Q0.2: 2.0
+Q0.3: 3.0
+Q0.4: 3.0
+Q0.5: 4.0
+Q0.6: 5.0
+Q0.7: 5.0
+Q0.8: 6.0
+Q0.9: 7.0
+
+
+Quartile:
+Q0.25: 2.0
+Q0.5: 4.0
+Q0.75: 6.0
+
+Quartilsabstand: 4.0
+Jahr:
+
+Dezile:
+Q0.1: 2015.0
+Q0.2: 2016.0
+Q0.3: 2017.0
+Q0.4: 2017.0
+Q0.5: 2018.0
+Q0.6: 2019.0
+Q0.7: 2019.0
+Q0.8: 2020.0
+Q0.9: 2021.0
+
+
+Quartile:
+Q0.25: 2016.0
+Q0.5: 2018.0
+Q0.75: 2020.0
+
+Quartilsabstand: 4.0
+
+Kovarianz: -4.67
+
+Korrelationskoeffizient: -1.17

@@ -1,0 +1,92 @@
+dateiname: data-3-a-bereinigt.csv
+
+Jahr | Exportquote
+------------------
+1 | 47.0
+2 | NaN
+3 | 46.7
+4 | 47.3
+5 | 47.2
+6 | Haha
+7 | 46.9
+
+Rangliste Jahr:
+1.0
+2.0
+3.0
+4.0
+5.0
+6.0
+7.0
+
+Rangliste Exportquote:
+46.7
+46.85
+46.9
+47.0
+47.05
+47.2
+47.3
+
+arithmetische Mittelwert Jahr: 4.0
+arithmetische Mittelwert Exportquote: 47.0
+
+Median Jahr: 4.0
+Median Exportquote: 47.0
+
+Spannweite Jahr: 6.0
+Spannweite Exportquote: 0.6
+
+Mittlere Abweichung von Median Jahr: 1.71
+Mittlere Abweichung von Median Exportquote: 0.16
+
+Stichprobenvarianz Jahr: 4.0
+Stichprobenvarianz Exportquote: 0.04
+
+Variationskoeffizient Jahr: 0.5
+Variationskoeffizient Exportquote: 0.0
+
+Jahr:
+
+Dezile:
+Q0.1: 1.0
+Q0.2: 2.0
+Q0.3: 3.0
+Q0.4: 3.0
+Q0.5: 4.0
+Q0.6: 5.0
+Q0.7: 5.0
+Q0.8: 6.0
+Q0.9: 7.0
+
+
+Quartile:
+Q0.25: 2.0
+Q0.5: 4.0
+Q0.75: 6.0
+
+Quartilsabstand: 4.0
+Exportquote:
+
+Dezile:
+Q0.1: 46.7
+Q0.2: 46.85
+Q0.3: 46.9
+Q0.4: 46.9
+Q0.5: 47.0
+Q0.6: 47.05
+Q0.7: 47.05
+Q0.8: 47.2
+Q0.9: 47.3
+
+
+Quartile:
+Q0.25: 46.85
+Q0.5: 47.0
+Q0.75: 47.2
+
+Quartilsabstand: 0.35
+
+Kovarianz: 0.1
+
+Korrelationskoeffizient: 0.26
