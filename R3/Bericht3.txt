@@ -30,9 +30,107 @@ Bibliotheken:
 
 R3.9:
 
-arithmetische Mittelwert Jahr: 4.0
-arithmetische Mittelwert Exportquote: 47.0
+arithmetische Mittelwert Jahr: 2018.0
+arithmetische Mittelwert Exportquote: 47.15
+
+Median Jahr: 2018.0
+Median Exportquote: 47.2
+
+R3.10:
+
+Spannweite Jahr: 6.0
+Spannweite Exportquote: 1.0
+
+R3.11:
+
+Mittlere Abweichung von Median Jahr: 1.71
+Mittlere Abweichung von Median Exportquote: 0.22
+
+R3.12:
+
+Stichprobenvarianz Jahr: 4.0
+Stichprobenvarianz Exportquote: 0.09
 
 
+R3.13:
+
+Variationskoeffizient Jahr: 0.0
+Variationskoeffizient Exportquote: 0.01
+
+R3.14:
+
+siehe boxplot_Exportquote.png
+siehe boxplot_Jahr.png
+
+R3.15:
+
+siehe scatterplot.png
+
+R3.16:
+
+siehe scatterplot.png
+
+R3.17:
+
+-------------
+
+
+R.3.18:
+
+--------- Funktion 5. Grades
+
+R3.19:
+
+
+
+R3.20:
+
+Jahr:
+
+Quartile:
+Q0.25: 2016.0
+Q0.5: 2018.0
+Q0.75: 2020.0
+
+Dezile:
+Q0.1: 2015.0
+Q0.2: 2016.0
+Q0.3: 2017.0
+Q0.4: 2017.0
+Q0.5: 2018.0
+Q0.6: 2019.0
+Q0.7: 2019.0
+Q0.8: 2020.0
+Q0.9: 2021.0
+
+Exportquote:
+
+Quartile:
+Q0.25: 46.9
+Q0.5: 47.2
+Q0.75: 47.3
+
+Dezile:
+Q0.1: 46.7
+Q0.2: 46.9
+Q0.3: 47.05
+Q0.4: 47.05
+Q0.5: 47.2
+Q0.6: 47.2
+Q0.7: 47.2
+Q0.8: 47.3
+Q0.9: 47.7
+
+R3.21:
+
+Quartilsabstand: 0.4
+
+R3.22:
+
+Kovarianz: 0.37
+
+R3.23:
+
+Korrelationskoeffizient: 0.63
 
 
