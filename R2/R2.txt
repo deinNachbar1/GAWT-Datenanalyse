@@ -5,13 +5,15 @@ Daten des Statistischen Bundesamts, veröffentlicht am 12. Semptember 2022
 Fehlerhafte/ unvollstaendige Daten vorhanden
 Die Daten liegen im csv-Format vor und befinden sich in einer Datei.
 
+R2.2:
+data-2-bereinigt.csv
+
 R2.3:
-
-
-
+Maßnahmen zur Datenbereinigung:
+Im Code werden Werte falschen Datentyps mithilfe linearer Interpolation ersetzt.
+Dies wurde als sinnvoll erachtet, da die übrigen Exportquoten auf einer glatten Kurve verlaufen bzw. wenig Abweichung vorhanden ist.
 
 R2.4:
-
 Software und genutzte Funktionen:
 Programmierung per PyCharm mit Python.
 Bibliotheken:
@@ -20,48 +22,49 @@ Bibliotheken:
     os; Überprüfung ob angegebene Datei existiert
     matplotlib; Erstellen von Boxplot, Scatterplot...
 
+R2.7:
+Ranglisten:
+rangliste_Exportquote.csv
+rangliste_Jahr.csv
+
 R2.8:
-
-arithmetische Mittelwert Jahr: 2018.0
-arithmetische Mittelwert Exportquote: 47.0
-
-Median Jahr: 2018.0
-Median Exportquote: 47.0
+Jahr:
+    Modus: -
+    Arithmetische Mittelwert: 2018
+    Median: 2018
+Exportquote:
+    Modus: - 
+    Median Exportquote: 47.0
+    Arithmetische Mittelwert Exportquote: 47.0
 
 R2.9:
-
 Spannweite Jahr: 6.0
 Spannweite Exportquote: 0.6
 
 R2.10:
-
-Mittlere Abweichung von Median Jahr: 1.71
-Mittlere Abweichung von Median Exportquote: 0.16
+Mittlere Abweichung vom Median Jahr: 1.71
+Mittlere Abweichung vom Median Exportquote: 0.16
 
 R2.11:
-
 Stichprobenvarianz Jahr: 4.0
 Stichprobenvarianz Exportquote: 0.04
 
 R2.12:
-
 Variationskoeffizient Jahr: 0.0
 Variationskoeffizient Exportquote: 0.0
 
 R2.13:
-
-siehe boxplot_Exportquote.png und boxplot_Jahr.png
+boxplot_Exportquote.png
+boxplot_Jahr.png
 
 R2.14:
-
-siehe scatterplot.png
+scatterplot_data_2.png
 
 R2.15:
 
 R2.16:
+Die Exportquote über die Jahre verläuft sehr glatt und die Spannweite ist gering.
 
-Bei den Daten des Statistischen Bundesamtes handelt es sich um Exportquoten zwischen den Jahren 
-2015 und 2021, welche am 12. September 2022 vom statistischen Bundesamt veröffentlicht wurden.
 
 R2.17:
 
@@ -120,5 +123,4 @@ R.2.20:
 Korrelationskoeffizient: -0.26
 
 
-a
 
