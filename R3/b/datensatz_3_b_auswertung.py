@@ -2,6 +2,8 @@ import csv
 import math
 import os
 import matplotlib.pyplot as plt
+from scipy import stats
+import numpy as np
 
 
 def main():
@@ -105,6 +107,13 @@ def main():
             plt.scatter(werteX, werteY)
             plt.xlabel(x)
             plt.ylabel(y)
+
+            model = np.poly1d(np.polyfit(werteX, werteY, 5))
+
+            line = np.linspace(min(werteX), max(werteX), int(werteY[0]))
+
+            plt.plot(line, model(line))
+
             plt.savefig("scatterplot.png")
 
     else:
