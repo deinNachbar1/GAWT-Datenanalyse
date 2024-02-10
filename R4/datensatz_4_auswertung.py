@@ -1,6 +1,7 @@
 import csv
 import math
 import os
+
 from scipy import stats
 
 import matplotlib.pyplot as plt
@@ -76,6 +77,8 @@ def main():
             print()
 
             print_modus(werteY, 1)
+
+            print()
 
             plt.figure(figsize=(7, 7))
             plt.boxplot(sorted(werteY))
