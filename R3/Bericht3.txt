@@ -7,31 +7,32 @@ Die Daten liegen im csv-Format vor und befinden sich in zwei Dateien.
 Dabei liegen die Jahreszahlen in Datei a in codierter Form vor. Die Codierung kann Datei b entnommen werden.
 
 R3.2:
-
-siehe data3.csv
+data3.csv
 
 R3.3:
-
-siehe data-3-bereinigt.csv
+data-3-bereinigt.csv
 
 R3.4:
-
-Die Daten wurden in eine für die Auswertung mit dem Python Programm notwendige Form gebracht.
+Die Daten wurden manuell in eine für die Auswertung mit dem Python Programm notwendige Form gebracht.
+Bei Werten mit falschem Datentyp findet im Python Programm lineare interpolation statt.
+Ist der erste oder letzte Wert fehlerhaft, wird der Wert danach bzw. davor übernommen.
 
 R3.6:
-
 Software und genutzte Funktionen:
 Programmierung per PyCharm mit Python.
 Bibliotheken:
     csv; Einlesen der csv-Dateien
     math; Verschiedene mathematische Operatoren
     os; Überprüfung ob angegebene Datei existiert
-    matplotlib; Erstellen von Boxplot, Scatterplot...
+    matplotlib; Erstellen von Boxplot, Scatterplot, Curvefitting...
+    numpy;
 
 R3.9:
+Modus Exportquote nach linearer Interpolation: 47.2
+Modus Jahr: -
 
-arithmetische Mittelwert Jahr: 2018.0
-arithmetische Mittelwert Exportquote: 47.15
+Arithmetische Mittelwert Jahr: 2018.0
+Arithmetische Mittelwert Exportquote: 47.15
 
 Median Jahr: 2018.0
 Median Exportquote: 47.2
