@@ -1,0 +1,92 @@
+dateiname: data-3-bereinigt.csv
+
+Jahr | Exportquote
+------------------
+2021 | 47.7
+2020 | NaN
+2019 | 46.7
+2018 | 47.3
+2017 | 47.2
+2016 | Haha
+2015 | 46.9
+
+Rangliste Jahr:
+2015.0
+2016.0
+2017.0
+2018.0
+2019.0
+2020.0
+2021.0
+
+Rangliste Exportquote:
+46.7
+46.9
+47.05
+47.2
+47.2
+47.3
+47.7
+
+arithmetische Mittelwert Jahr: 2018.0
+arithmetische Mittelwert Exportquote: 47.15
+
+Median Jahr: 2018.0
+Median Exportquote: 47.2
+
+Spannweite Jahr: 6.0
+Spannweite Exportquote: 1.0
+
+Mittlere Abweichung von Median Jahr: 1.71
+Mittlere Abweichung von Median Exportquote: 0.22
+
+Stichprobenvarianz Jahr: 4.0
+Stichprobenvarianz Exportquote: 0.09
+
+Variationskoeffizient Jahr: 0.0
+Variationskoeffizient Exportquote: 0.01
+
+Jahr:
+
+Dezile:
+Q0.1: 2015.0
+Q0.2: 2016.0
+Q0.3: 2017.0
+Q0.4: 2017.0
+Q0.5: 2018.0
+Q0.6: 2019.0
+Q0.7: 2019.0
+Q0.8: 2020.0
+Q0.9: 2021.0
+
+
+Quartile:
+Q0.25: 2016.0
+Q0.5: 2018.0
+Q0.75: 2020.0
+
+Quartilsabstand: 4.0
+Exportquote:
+
+Dezile:
+Q0.1: 46.7
+Q0.2: 46.9
+Q0.3: 47.05
+Q0.4: 47.05
+Q0.5: 47.2
+Q0.6: 47.2
+Q0.7: 47.2
+Q0.8: 47.3
+Q0.9: 47.7
+
+
+Quartile:
+Q0.25: 46.9
+Q0.5: 47.2
+Q0.75: 47.3
+
+Quartilsabstand: 0.4
+
+Kovarianz: 0.37
+
+Korrelationskoeffizient: 0.63
