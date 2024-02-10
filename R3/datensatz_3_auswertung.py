@@ -114,6 +114,8 @@ def main():
 
             plt.plot(line, model(line))
 
+            plt.legend(["Werte", "fitting"])
+
             plt.savefig("scatterplot.png")
 
     else:
