@@ -14,8 +14,12 @@ data-3-bereinigt.csv
 
 R3.4:
 Die Daten wurden manuell in eine für die Auswertung mit dem Python Programm notwendige Form gebracht.
-Bei Werten mit falschem Datentyp findet im Python Programm lineare interpolation statt.
+Bei Werten mit falschem Datentyp findet im Python Programm lineare Interpolation statt.
 Ist der erste oder letzte Wert fehlerhaft, wird der Wert danach bzw. davor übernommen.
+Die lineare Interpolation wurde als sinnvoll erachtet, da die sonstigen Daten recht glatt verlaufen.
+
+R3.5:
+data-3-a-bereinigt.xlsx
 
 R3.6:
 Software und genutzte Funktionen:
@@ -25,7 +29,15 @@ Bibliotheken:
     math; Verschiedene mathematische Operatoren
     os; Überprüfung ob angegebene Datei existiert
     matplotlib; Erstellen von Boxplot, Scatterplot, Curvefitting...
-    numpy;
+    numpy; Allgemeine Berechnungen
+
+R3.7:
+
+
+R3.8:
+rangliste_Exportquote.csv
+rangliste_Key.csv
+rangliste_Jahr.csv
 
 R3.9:
 Modus Exportquote nach linearer Interpolation: 47.2
@@ -38,50 +50,40 @@ Median Jahr: 2018.0
 Median Exportquote: 47.2
 
 R3.10:
-
 Spannweite Jahr: 6.0
 Spannweite Exportquote: 1.0
 
 R3.11:
-
 Mittlere Abweichung von Median Jahr: 1.71
 Mittlere Abweichung von Median Exportquote: 0.22
 
 R3.12:
-
 Stichprobenvarianz Jahr: 4.0
 Stichprobenvarianz Exportquote: 0.09
 
 
 R3.13:
-
 Variationskoeffizient Jahr: 0.0
 Variationskoeffizient Exportquote: 0.01
 
 R3.14:
+boxplot_Exportquote.png
+boxplot_Jahr.png
 
-siehe boxplot_Exportquote.png
-siehe boxplot_Jahr.png
-
-R3.15:
-
-siehe scatterplot.png
-
-R3.16:
-
-siehe scatterplot.png
+R3.15, R3.16:
+scatterplot.png
 
 R3.17:
+Polynomfunktion 5. Grades
 
--------------
-
-
-R.3.18:
-
---------- Funktion 5. Grades
+R3.18:
+Legende siehe Scatterplot
 
 R3.19:
-
+Die Exportquote über die Jahre verläuft sehr glatt; Spannweite und Streuung sind gering.
+Zudem scheinen die Werte recht symmetrisch um den Median verteilt zu sein, da der Median und arithmetisches Mittel fast gleich sind.
+Es liegt eine mittelmäßige positive Korrelation vor.
+Insgesamt sind die Aussagen über die Daten mittelmäßig aussagekräftig, da nur wenige Datenpunkte vorliegen und 2 Datenpunkte fehlerhaft sind.
 
 
 R3.20:
