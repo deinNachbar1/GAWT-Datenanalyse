@@ -113,7 +113,6 @@ def main():
             plt.ylabel(y)
             plt.savefig("plot.png")
 
-
     else:
         print("datei existiert nicht!\n")
         main()

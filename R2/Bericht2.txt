@@ -62,11 +62,13 @@ R2.14:
 scatterplot_data_2.png
 
 R2.15:
+plot.png
 
 R2.16:
 Die Exportquote über die Jahre verläuft sehr glatt; Spannweite und Streuung sind gering.
 Zudem scheinen die Werte recht symmetrisch um den Median verteilt zu sein, da der Median gleich dem arithmetischen Mittel ist.
 Es liegt eine leicht negative Korrelation vor.
+Insgesamt sind die Aussagen über die Daten mittelmäßig aussagekräftig, da nur wenige Datenpunkte vorliegen und 2 Datenpunkte fehlerhaft sind.
 
 R2.17:
 Jahr:

@@ -2,7 +2,6 @@ import csv
 import math
 import os
 import matplotlib.pyplot as plt
-from scipy import stats
 import numpy as np
 
 

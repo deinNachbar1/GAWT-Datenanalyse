@@ -12,7 +12,7 @@ ID;Priorität (MUSS / SOLL / KANN);Datensatz;Beschreibung;Auswertung;erreichbare
 * Deckblatt mit Gruppennummer, Namen aller Beteiligten, Veranstaltungsname, Semester
 * Quellenverzeichnis für externe Referenzen";Bericht;0
 R0.2;MUSS;;"Alle .csv-Dateien liegen als UTF-8 Datei mit Trennzeichen "","" und Dezimaltrennzeichen ""."" vor.";Datei;0
-R0.3;SOLL;;Der gesamte Quellcode / die Rohdaten sowie alle Ergebnisse sind vorhanden.;Code;2
+x R0.3;SOLL;;Der gesamte Quellcode / die Rohdaten sowie alle Ergebnisse sind vorhanden.;Code;2
 x R0.4;KANN;;Die Abgabe erfolgt über ein .git-Repository auf einer beliebigen Git-Webplattform.;-;2
 ;;;;;0
 x R1.1;MUSS;1;"Es liegt eine textuelle Beschreibung des gegebenen Datensatzes vor, die folgende Fragen beantwortet:
@@ -23,7 +23,7 @@ x R1.2;MUSS;1;Für jede Variable ist die jeweils geeignete Skalenvariante angege
 (noch: Codedokumentation) R1.3;MUSS;1;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;0
 x R1.4;MUSS;1;Zu jeder Variable ist eine Urliste im .csv-Format erstellt.;Datei;0
 x R1.5;MUSS;1;Zu jeder Variable ist eine Rangliste im .csv-Format erstellt.;Datei;0
-(?)x R1.6;KANN;1;Die gegebenen Daten liegen als konsolidierte Excel-Datei im .xlsx-Format vor.;Datei;1
+x R1.6;KANN;1;Die gegebenen Daten liegen als konsolidierte Excel-Datei im .xlsx-Format vor.;Datei;1
 x R1.7;MUSS;1;Für jede Variable sind Modus, arithmetischer Mittelwert und Median angegeben.;Bericht;0
 x R1.8;MUSS;1;Für jede Variable ist die Spannweite angegeben.;Bericht;0
 x R1.9;MUSS;1;Für jede Variable ist die mittlere Abweichung vom Median angegeben.;Bericht;0
@@ -48,7 +48,7 @@ x R2.2;SOLL;2;Die eingelesenen Daten liegen in bereinigter Form vor.;Datei;2
 x R2.3;SOLL;2;Ergriffene Maßnahmen zur Datenbereinigung sind dokumentiert.;Bericht / Code / Datei;2
 x R2.4;SOLL;2;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;2
 x R2.5;SOLL;2;Die bereinigten Daten liegen als konsolidierte Excel-Datei im .xlsx-Format vor.;Datei;1
-R2.6;SOLL;2;Zu jeder Variable ist eine Urliste im .csv-Format erstellt.;Datei;1
+x R2.6;SOLL;2;Zu jeder Variable ist eine Urliste im .csv-Format erstellt.;Datei;1
 x R2.7;SOLL;2;Zu jeder Variable ist eine Rangliste im .csv-Format erstellt.;Datei;1
 x R2.8;SOLL;2;Für jede Variable sind Modus, arithmetischer Mittelwert und Median angegeben.;Bericht;1
 x R2.9;KANN;2;Für jede Variable ist die Spannweite angegeben.;Bericht;1
@@ -57,7 +57,7 @@ x R2.11;SOLL;2;Für jede Variable ist die Stichprobenvarianz angegeben.;Bericht;
 x R2.12;SOLL;2;Für jede Variable ist der Variationskoeffizient angegeben.;Bericht;1
 x R2.13;SOLL;2;Für jede Variable ist ein Box-Whisker-Plot erstellt.;Bericht;2
 x R2.14;SOLL;2;Ein Scatterplot der Daten liegt vor, Achsenbeschriftungen sind vorhanden.;Bericht;2
-R2.15;SOLL;2;Eine weitere geeignete grafische Darstellung der Daten samt Beschriftung + Beschreibung liegt vor.;Bericht;2
+x R2.15;SOLL;2;Eine weitere geeignete grafische Darstellung der Daten samt Beschriftung + Beschreibung liegt vor.;Bericht;2
 x R2.16;SOLL;2;Eine textuelle Beschreibung der Daten als Zusammenfassung liegt vor.;Bericht;3
 x R2.17;KANN;2;Für jede Variable sind sämtliche Quartile und Dezile angegeben.;Bericht;2
 x R2.18;KANN;2;Für jede Variable ist der Quartilsabstand R_Q0.5 angegeben.;Bericht;1
@@ -73,7 +73,7 @@ x R3.3;SOLL;3;Die eingelesenen Daten liegen in bereinigter Form vor.;Datei;2
 x R3.4;SOLL;3;Ergriffene Maßnahmen zur Datenbereinigung sind dokumentiert.;Bericht / Code / Datei;2
 x R3.5;SOLL;3;Die bereinigten Daten liegen als konsolidierte Excel-Datei im .xlsx-Format vor.;Datei;1
 x R3.6;SOLL;3;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;2
-R3.7;SOLL;3;Zu jeder Variable ist eine Urliste im .csv-Format erstellt.;Datei;1
+x R3.7;SOLL;3;Zu jeder Variable ist eine Urliste im .csv-Format erstellt.;Datei;1
 x R3.8;SOLL;3;Zu jeder Variable ist eine Rangliste im .csv-Format erstellt.;Datei;1
 x R3.9;SOLL;3;Für jede Variable sind Modus, arithmetischer Mittelwert und Median angegeben.;Bericht;1
 x R3.10;KANN;3;Für jede Variable ist die Spannweite angegeben.;Bericht;1

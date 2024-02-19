@@ -90,3 +90,5 @@ Quartilsabstand: 4.0
 Kovarianz: -4.67
 
 Korrelationskoeffizient: -1.17
+
+y = -0.0 * x⁵ + 0.0 * x⁴ + -0.0 * x³ + 0.0 * x² + -1.0 * x + 2022.0
