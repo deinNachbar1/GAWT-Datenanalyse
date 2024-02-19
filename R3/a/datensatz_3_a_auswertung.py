@@ -2,7 +2,7 @@ import csv
 import math
 import os
 import matplotlib.pyplot as plt
-from scipy import stats
+
 import numpy as np
 
 
@@ -115,6 +115,10 @@ def main():
             plt.plot(line, model(line))
 
             plt.savefig("scatterplot.png")
+
+            print()
+
+            print("y = " + str(round(model.coef[0], 2)) + " * x⁵ + " + str(round(model.coef[1], 2)) + " * x⁴ + " + str(round(model.coef[2], 2)) + " * x³ + " + str(round(model.coef[3], 2)) + " * x² + " + str(round(model.coef[4], 2)) + " * x + " + str(round(model.coef[5], 2)))
 
     else:
         print("datei existiert nicht!\n")
