@@ -108,6 +108,12 @@ def main():
             plt.ylabel(y)
             plt.savefig("scatterplot.png")
 
+            plt.bar(werteX, werteY)
+            plt.xlabel(x)
+            plt.ylabel(y)
+            plt.savefig("plot.png")
+
+
     else:
         print("datei existiert nicht!\n")
         main()
