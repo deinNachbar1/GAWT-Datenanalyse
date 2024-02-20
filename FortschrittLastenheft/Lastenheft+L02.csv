@@ -11,7 +11,7 @@ ID;Priorität (MUSS / SOLL / KANN);Datensatz;Beschreibung;Auswertung;erreichbare
 (Muss noch alles eingefuegt werden)R0.1;MUSS;;"Es existiert ein Projektbericht als PDF-Datei mit folgenden Inhalten:
 * Deckblatt mit Gruppennummer, Namen aller Beteiligten, Veranstaltungsname, Semester
 * Quellenverzeichnis für externe Referenzen";Bericht;0
-R0.2;MUSS;;"Alle .csv-Dateien liegen als UTF-8 Datei mit Trennzeichen "","" und Dezimaltrennzeichen ""."" vor.";Datei;0
+x R0.2;MUSS;;"Alle .csv-Dateien liegen als UTF-8 Datei mit Trennzeichen "","" und Dezimaltrennzeichen ""."" vor.";Datei;0
 x R0.3;SOLL;;Der gesamte Quellcode / die Rohdaten sowie alle Ergebnisse sind vorhanden.;Code;2
 x R0.4;KANN;;Die Abgabe erfolgt über ein .git-Repository auf einer beliebigen Git-Webplattform.;-;2
 ;;;;;0
@@ -94,8 +94,8 @@ x R3.23;KANN;3;Der Korrelationskoeffizient ist angegeben.;Bericht;1
 x R4.1;KANN;4;Es liegen (z.B. mit Phybox) selbst generierte 1D-Daten mit mind. 100 Datenpunkten im .csv-Format vor.;Datei;2
 x R4.2;KANN;4;Die eingelesenen Daten liegen in bereinigter Form vor.;Datei;1
 x R4.3;KANN;4;Ergriffene Maßnahmen zur Datenbereinigung sind dokumentiert.;Bericht / Code / Datei;1
-(Code Kommentare fehlen) R4.4;KANN;4;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;1
-(Modus fehlt) R4.5;KANN;4;Es sind Modus, arithmetischer Mittelwert und Median angegeben.;Bericht;1
+x (keine Code-Kommentare) R4.4;KANN;4;Die verwendete Software und die genutzten Funktionen sind dokumentiert.;Bericht / Code / Datei;1
+x R4.5;KANN;4;Es sind Modus, arithmetischer Mittelwert und Median angegeben.;Bericht;1
 x R4.6;KANN;4;Die Stichprobenvarianz ist angegeben.;Bericht;1
 x R4.7;KANN;4;Ein Box-Whisker-Plot liegt vor.;Bericht;1
 x R4.8;KANN;4;Eine textuelle Beschreibung der Daten als Zusammenfassung liegt vor.;Bericht;2

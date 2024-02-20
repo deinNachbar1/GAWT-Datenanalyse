@@ -72,7 +72,7 @@ boxplot_Exportquote.png
 boxplot_Jahr.png
 
 R3.15, R3.16:
-scatterplot.png
+scatterplot-data-3.png
 
 R3.17:
 Polynomfunktion 5. Grades
